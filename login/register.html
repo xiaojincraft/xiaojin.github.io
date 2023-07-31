@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function redirectToLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+<body>
+    <h1>注册</h1>
+    <form method="post" action="register.php" onsubmit="redirectToLogin()">
+        <input type="text" name="username" placeholder="用户名" required><br>
+        <input type="password" name="password" placeholder="密码" required><br>
+        <input type="submit" value="注册">
+    </form>
+</body>
+</html>
